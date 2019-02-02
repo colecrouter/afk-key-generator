@@ -1,0 +1,37 @@
+<div class="col-lg-8 offset-lg-2 card text-white bg-dark" style="height: auto; box-shadow: rgba(0,0,0,0.1) 0.4rem 0.4rem;">
+	<br />
+	<h3>GCID: <span style="opacity: 0.25;">(Optional)</span></h3>
+	<input id="gcid" type="tel" maxlength="22" class="form-control input-group-text col-12" placeholder="XXXX-XXX-XXXX-MM/DD/YY" autocomplete="off" data-toggle="popover" data-content="XXXX-XXX-XXXX-MM/DD/YY" data-trigger="manual" data-placement="top" data-html="true" aria-label="GCID">
+	<div class="col-12">
+		<br />
+		<h3>Bitdefender Password:</h3>
+		<input id="bp" type="password" class="form-control input-group-text col-12" placeholder="Password for Bitdefender PAN" aria-label="Password for Bitdefender PAN" autocomplete="off">
+	</div>
+	<br />
+	<br />
+	<button id="submit" onClick="listBitdefenderKey()" class="btn btn-outline-warning offset-1 col-10" aria-label="Search">Search</button>
+	<br />
+	<br />
+	<h1>Bitdefender Keys:</h1>
+	<div class="table-limit">
+		<table class="table table-striped table-dark">
+			<thead>
+				<tr>
+					<th>Date</th>
+					<th>GCID</th>
+					<th>Type</th>
+					<th>Author</th>
+					<th>Key</th>
+				</tr>
+			</thead>
+			<tbody id="keys">
+			</tbody>
+		</table>
+	</div>
+	<br />
+	<br />
+</div>
+<br />
+<br />
+<br />
+<br />

@@ -1,0 +1,52 @@
+<!doctype html>
+<html style="height: 100%; margin: 0;" lang="en">
+
+<!--
+Programmed from scratch by Cole Crouter for use by Geek Squad
+Canada.
+
+If you have any questions or concerns, email me at
+ccrouter@geeksquad.ca. Suggestions are always appreciated.
+
+-->
+
+<head>
+    <meta charset="utf-8">
+	<meta name="author" content="Cole Crouter">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#ffc107">
+	<meta name="description" content="Key generator for use in setups">
+    <title>AFK Key Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background: #222; top: 0; height: 100vh; display: block; padding-top: 5rem; padding-bottom: 5rem;" onload="loadPage(0);">
+	<div id="toaster">
+	</div>
+	<nav class="sidebar">
+		<div class="btn-group btn-group-lg col-xl-4 col-lg-5 col-sm-12">
+			<button class="btn btn-outline-success col-4" onClick="loadPage(0);">Generator</button>
+			<button class="btn btn-outline-danger col-4" onClick="loadPage(1);">Invalidator</button>
+			<button class="btn btn-outline-warning col-4" onClick="loadPage(2);">List</button>
+		</div>
+	</nav>
+	<br />
+	<div id="container">
+	</div>
+</body>
+<footer>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap "popper" -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- JS for generator -->
+    <script src="index.js"></script>
+</footer>
+
+</html>

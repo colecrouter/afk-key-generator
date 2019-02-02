@@ -1,0 +1,65 @@
+<div class="col-lg-8 offset-lg-2 card text-white bg-dark" style="height: auto; box-shadow: rgba(0,0,0,0.1) 0.4rem 0.4rem;">
+        <br>
+        <h1>GCID:</h1>
+        <div class="input-group mb-3">
+            <input id="gcid" type="tel" maxlength="22" class="form-control input-group-text col-12" placeholder="XXXX-XXX-XXXX-MM/DD/YY" autocomplete="off" data-toggle="popover" data-content="XXXX-XXX-XXXX-MM/DD/YY" data-trigger="manual" data-placement="top" data-html="true" data-animation="true" aria-label="GCID">
+			
+			<div class="input-group-append">
+                <button class="btn btn-warning dropdown-toggle btn-block" id="type" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="GSHM or Ultimate">GSHM</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" onClick="switchType(0);" aria-label="GSHM">GSHM</a>
+                    <a class="dropdown-item" onClick="switchType(1);" aria-label="Ultimate">Ultimate</a>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="col-12 row mx-auto">
+            <div class="col-6">
+                <h3>Bitdefender Password:</h3>
+                <input id="bp" type="password" class="form-control input-group-text col-12" placeholder="Password for Bitdefender PAN" autocomplete="off" aria-label="Password for Bitdefender PAN">
+			</div>
+            <br />
+            <div class="col-6">
+                <h3 style="margin-right: 3.4rem;">Acronis Password:</h3>
+                <input id="ap" type="password" class="form-control disableable input-group-text col-12" placeholder="Password for Acronis Portal" autocomplete="off" aria-label="Password for Acronis Portal">
+                <br />
+            </div>
+        </div>
+        <br />
+        	<button id="submit" onClick="getBothKeys()" class="btn btn-outline-warning offset-1 col-10" aria-label="Generate">Generate</button>
+        <br />
+        <br />
+        <h1>Bitdefender Key:</h1>
+		<div class="input-group">
+        	<input id="bk" type="text" class="form-control col-12" aria-label="Bitdefender Key" readonly>
+			<div class="input-group-append">
+				<button class="btn btn-warning" type="button" onClick="document.getElementById('bdg').hidden=false;document.getElementById('bdg').select(); document.execCommand('copy');document.getElementById('bdg').hidden=true;notification(0, 'Copied!');"><img src="clippy.svg" style="height: 1em; margin: 0.2em;" alt="Copy to clipboard" aria-label="Copy to clipboard"></button>
+			</div>
+		</div>
+		<div class="progress">
+			<div id="bpr" class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"></div>
+		</div>
+        <br />
+        <br />
+        <h1>Acronis Key:</h1>
+		<div class="input-group">
+        	<input id="ak" type="text" class="form-control col-12" aria-label="Acronis Key" readonly>
+			<div class="input-group-append">
+				<button class="btn btn-warning" type="button" onClick="document.getElementById('ag').hidden=false;document.getElementById('ag').select(); document.execCommand('copy');document.getElementById('ag').hidden=true;notification(0, 'Copied!');;"><img src="clippy.svg" style="height: 1em; margin: 0.2em;" alt="Copy to clipboard" aria-label="Copy to clipboard"></button>
+			</div>
+		</div>
+		<div class="progress">
+			<div id="apr" class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"></div>
+		</div>
+        <br />
+        <br />
+		<form id="setup" method="post" action="getGSHMGuide.php" enctype="multipart/form-data">
+			<input type="text" name="ag" id="ag" hidden>
+			<input type="text" name="bdg" id="bdg" hidden>
+			<button id="setupbtn" type="submit" class="btn btn-outline-warning offset-1 col-10" disabled>Generate Setup Guide</button>
+		</form>
+		<br />
+		<br />
+    </div>
+	<br />
+	<br />

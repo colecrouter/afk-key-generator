@@ -1,0 +1,43 @@
+<div class="col-lg-8 offset-lg-2 card text-white bg-dark" style="height: auto; box-shadow: rgba(0,0,0,0.1) 0.4rem 0.4rem;">
+	<br>
+	<h1>Bitdefender Key:</h1>
+	<input id="bk" maxlength="10" class="form-control input-group-text col-12" placeholder="Key to invalidate" aria-label="Key to invalidate" autocomplete="off">
+	<div class="progress">
+		<div id="bpr" class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"></div>
+	</div>
+	<br />
+	<div class="col-12 row mx-auto">
+		<div class="col-6">
+			<h3>Bitdefender Password:</h3>
+			<input id="bp" type="password" class="form-control input-group-text col-12" placeholder="Password for Bitdefender PAN" aria-label="Password for Bitdefender PAN" autocomplete="off">
+		</div>
+		<div class="col-6">
+			<h3>Comment:</h3>
+			<textarea id="br" class="form-control input-group-text" style="height: 6rem !important; text-align: left;" placeholder="Reason for invalidation" aria-label="Reason for invalidation"></textarea>
+		</div>
+		<br />
+
+	</div>
+	<br />
+		<button id="brbutton" onClick="removeBitdefenderKey()" class="btn btn-outline-warning offset-1 col-10" aria-label="Invalidate">Invalidate</button>
+	<br />
+	<br />
+	<br />
+	<h1>GCID:</h1>
+	<input id="gcid" type="tel" maxlength="22" class="form-control input-group-text col-12" placeholder="XXXX-XXX-XXXX-MM/DD/YY" autocomplete="off" data-toggle="popover" data-content="XXXX-XXX-XXXX-MM/DD/YY" data-trigger="manual" data-placement="top" data-html="true" aria-label="GCID">
+	<div class="progress">
+		<div id="apr" class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"></div>
+	</div>
+	<div class="col-12">
+		<br />
+		<h3>Acronis Password:</h3>
+		<input id="ap" type="password" class="form-control input-group-text col-12" placeholder="Password for Acronis Portal" aria-label="Password for Acronis Portal" autocomplete="off">
+		<br />
+		<br />
+		<button id="arbutton" onClick="removeAcronisKey()" class="btn btn-outline-warning offset-1 col-10" aria-label="Invalidate">Invalidate</button>
+		<br />
+		<br />
+	</div>
+</div>
+<br />
+<br />
