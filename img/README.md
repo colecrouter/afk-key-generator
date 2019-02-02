@@ -1,7 +1,7 @@
 Here's a screenshot of the generator <br /><br />
 ![img](1.png)
 ##
-Some of it's features include a "popover", which help you type in the GCID exactly as it shows up on the receipt. As well, the generator automatically inserts dashes and slashes when typing, but not when deleting or backspacing. <br /><br />
+Some of it's features include a "popover", which helps you type in the GCID exactly as it shows up on the receipt. As well, the generator automatically inserts dashes and slashes when typing, but not when deleting or backspacing. <br /><br />
 ![img](2.png)
 
 ##
