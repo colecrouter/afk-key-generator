@@ -1,7 +1,7 @@
 ﻿// JavaScript Document
 
 // Change here
-var bdEmail "email@email.com";
+var bdEmail = "email@email.com";
 var aEmail = "email@email.com";
 
 // Other variables
