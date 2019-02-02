@@ -15,7 +15,8 @@ This uses a couple dependencies, all of which are already included:
 
 ## Setup
 1. Download all of the files in [/src]()
-2. Go into `index.js`
-  - Replace `XXXX` at the top with your precinct number
-  - Replace `email@email.com` at the top with your corresponding Acronis & Bitdefender logins
+2. Go into `index.js`, then replace `email@email.com` at the top with your corresponding Acronis & Bitdefender logins
 3. Run on a HTTP server (Apache works best, but it will run on PHP test environment a little buggy)
+
+## How it works
+If you want to know more about how it works, [click here]().
