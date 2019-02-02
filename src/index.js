@@ -4,6 +4,7 @@
 var bdEmail "email@email.com";
 var aEmail = "email@email.com";
 
+// Other variables
 var done;
 var loader;
 var progressa;
